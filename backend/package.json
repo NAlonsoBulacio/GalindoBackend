@@ -10,22 +10,23 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "4.20.3",
-    "@strapi/plugin-i18n": "4.20.3",
-    "@strapi/plugin-users-permissions": "4.20.3",
-    "@strapi/provider-upload-cloudinary": "^4.20.3",
-    "@strapi/strapi": "4.20.3",
+    "@strapi/plugin-cloud": "4.20.2",
+    "@strapi/plugin-i18n": "4.20.2",
+    "@strapi/plugin-users-permissions": "4.20.2",
+    "@strapi/provider-upload-cloudinary": "^4.20.2",
+    "@strapi/strapi": "4.20.2",
     "pg": "8.8.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "5.3.4",
-    "styled-components": "5.3.3"
+    "pg-connection-string": "^2.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.11"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "0bfebbf9-3edd-469a-9823-27001d662779"
+    "uuid": "587ab5d0-de8a-4b7c-96d9-932ef248c0aa"
   },
   "engines": {
     "node": "20"
