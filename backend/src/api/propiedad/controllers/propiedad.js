@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * property controller
+ * propiedad controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::property.property');
+module.exports = createCoreController('api::propiedad.propiedad');

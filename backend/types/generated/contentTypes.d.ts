@@ -362,30 +362,41 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiPropertyProperty extends Schema.CollectionType {
-  collectionName: 'properties';
+export interface ApiPropiedadPropiedad extends Schema.CollectionType {
+  collectionName: 'propiedades';
   info: {
-    singularName: 'property';
-    pluralName: 'properties';
-    displayName: 'Properties';
+    singularName: 'propiedad';
+    pluralName: 'propiedades';
+    displayName: 'Propiedades';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.Blocks;
-    img: Attribute.Media;
+    titulo: Attribute.Blocks;
+    fotos_propiedad: Attribute.Media;
+    amenidades: Attribute.Media;
+    titulo_amenidades: Attribute.String;
+    youtube_url: Attribute.String;
+    detalles: Attribute.Media;
+    titulo_detalles: Attribute.String;
+    latitud: Attribute.String;
+    longitud: Attribute.String;
+    descripciones: Attribute.Blocks;
+    preguntas_respuestas: Attribute.Blocks;
+    subtitulo_amenidades: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::property.property',
+      'api::propiedad.propiedad',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::property.property',
+      'api::propiedad.propiedad',
       'oneToOne',
       'admin::user'
     > &
@@ -824,7 +835,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::property.property': ApiPropertyProperty;
+      'api::propiedad.propiedad': ApiPropiedadPropiedad;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;

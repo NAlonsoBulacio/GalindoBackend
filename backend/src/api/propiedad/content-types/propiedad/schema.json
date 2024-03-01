@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "propiedades",
+  "info": {
+    "singularName": "propiedad",
+    "pluralName": "propiedades",
+    "displayName": "Propiedades",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "blocks"
+    },
+    "fotos_propiedad": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "amenidades": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulo_amenidades": {
+      "type": "string"
+    },
+    "youtube_url": {
+      "type": "string"
+    },
+    "detalles": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "titulo_detalles": {
+      "type": "string"
+    },
+    "latitud": {
+      "type": "string"
+    },
+    "longitud": {
+      "type": "string"
+    },
+    "descripciones": {
+      "type": "blocks"
+    },
+    "preguntas_respuestas": {
+      "type": "blocks"
+    },
+    "subtitulo_amenidades": {
+      "type": "string"
+    }
+  }
+}
