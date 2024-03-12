@@ -71,6 +71,12 @@
     },
     "subtitulo_amenidades": {
       "type": "string"
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "descripciones_items": {
+      "type": "blocks"
     }
   }
 }

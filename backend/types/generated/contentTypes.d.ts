@@ -386,6 +386,8 @@ export interface ApiPropiedadPropiedad extends Schema.CollectionType {
     descripciones: Attribute.Blocks;
     preguntas_respuestas: Attribute.Blocks;
     subtitulo_amenidades: Attribute.String;
+    subtitulo: Attribute.String;
+    descripciones_items: Attribute.Blocks;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
